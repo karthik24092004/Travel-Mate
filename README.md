@@ -1,73 +1,96 @@
-# Welcome to your Lovable project
+<div align="center">
 
-## Project info
+# 🧳 TravelMate
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+### *Your group trip, fully planned — from first day to final bill.*
 
-## How can I edit this code?
+> Map out your itinerary day by day, track every expense on the go, and settle up fairly when the trip ends.
 
-There are several ways of editing your application.
+🌐 **[View Live Demo](https://travelllmate.netlify.app/)**
 
-**Use Lovable**
+![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript_5-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite_5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+</div>
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🌍 What Is TravelMate?
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+TravelMate is a **group trip planning app** that takes you from zero to fully organized —  
+set up your trip, plan activities for each day, log expenses as you go, and let the app handle the math when it's time to settle.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+No spreadsheets. No group chat chaos. Just a clean 5-step flow.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🗺️ The 5-Step Trip Flow
+Setup  →  Itinerary  →  Expenses  →  Summary  →  Settle
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**① Setup** — Name your trip, set duration, add travelers  
+**② Itinerary** — Plan activities day by day (morning / afternoon / evening slots)  
+**③ Expenses** — Log costs by category, assign who paid, split among participants  
+**④ Summary** — Visual breakdown of total spend, per-person share, and category charts  
+**⑤ Settle** — Greedy algorithm computes the minimum transactions to clear all balances
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🔐 Real Authentication
 
-**Edit a file directly in GitHub**
+TravelMate has **actual auth** — email/password sign-up and sign-in powered by **Supabase**, not a fake login screen.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🛠️ How It's Built
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**UI & Frontend**
+- React 18 + TypeScript 5 — typed, component-driven architecture
+- Vite 5 — fast dev server and optimized builds
+- Tailwind CSS v3 + `tailwindcss-animate` — utility-first styling with smooth transitions
+- shadcn/ui (Radix UI + CVA) — accessible, headless component primitives
+- Lucide React + Sonner — icons and toast notifications
 
-## What technologies are used for this project?
+**Data & Logic**
+- TanStack React Query v5 — async state and caching
+- React Hook Form + Zod — type-safe form validation
+- date-fns — clean date manipulation
+- localStorage — trip data persisted client-side across sessions
 
-This project is built with:
+**Visualization**
+- Recharts 2 — expense breakdowns, category charts, per-person balances
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**Testing**
+- Vitest + Testing Library + jsdom
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## ⚙️ Architecture at a Glance
+Browser
+├── Auth (Supabase — email/password)
+├── Trip Data (localStorage)
+├── UI Layer (React + shadcn/ui + Tailwind)
+├── State (React Query + hooks)
+├── Charts (Recharts)
+└── Settlement Engine (Greedy Algorithm — pure TypeScript)
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🗂️ Expense Categories
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+| | Category |
+|---|---|
+| ✈️ | Travel |
+| 🍔 | Food |
+| 🏨 | Stay |
+| 📦 | Miscellaneous |
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+<div align="center">
+
+*Plan together. Track as you go. Settle with math.*
+
+</div>
